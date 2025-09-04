@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ConnectEase — Home</title>
+  <meta name="description" content="ConnectEase Networking Solutions. Simple, reliable, and affordable networking services for small businesses and homes." />
+  <style>
+    :root{
+      --brand-blue:#1E90FF;
+      --brand-teal:#00BFA5;
+      --ink:#243447;
+      --muted:#6b7280;
+      --bg:#ffffff;
+      --card:#f7f9fc;
+      --ring: rgba(30,144,255,.25);
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial,sans-serif;line-height:1.55}
+    a{color:var(--brand-blue);text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1000px;margin-inline:auto;padding:24px}
+    .nav{display:flex;align-items:center;gap:16px;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:44px;height:44px;object-fit:contain}
+    .brand .name{font-weight:800;color:var(--brand-blue)}
+    .tag{font-size:12px;color:var(--muted)}
+    .links{display:flex;gap:18px;flex-wrap:wrap}
+    .btn{display:inline-block;background:var(--brand-blue);color:#fff;padding:10px 14px;border-radius:10px;font-weight:600;box-shadow:0 6px 20px var(--ring)}
+    .btn:hover{filter:brightness(.96)}
+    .hero{padding:40px 0;text-align:center}
+    .hero h1{font-size:clamp(32px,5vw,48px);margin:0 0 16px;color:var(--brand-blue)}
+    .hero p{font-size:18px;color:var(--muted);max-width:700px;margin-inline:auto}
+    .grid{display:grid;gap:20px;grid-template-columns:1fr 1fr; margin-top:32px}
+    .card{background:var(--card);border:1px solid #e9eef7;border-radius:16px;padding:22px;text-align:center}
+    .card h3{margin:0 0 10px;color:var(--ink)}
+    .card p{color:var(--muted);font-size:15px}
+    footer{margin:36px 0 10px;color:var(--muted);font-size:14px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px}
+    @media(max-width:800px){.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <div class="brand">
+        <img src="logo.png" alt="ConnectEase logo" />
+        <div>
+          <div class="name">ConnectEase</div>
+          <div class="tag">Networking Solutions</div>
+        </div>
+      </div>
+      <div class="links">
+        <a href="index.html">Home</a>
+        <a href="networking.html">Networking</a>
+        <a class="btn" href="contact.html">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to ConnectEase Networking Solutions</h1>
+      <p>We make connecting your business or home to the world simple, secure, and stress-free. Whether you need a brand-new network, a speed boost, or just someone to explain things in plain English, we’re here to help.</p>
+    </section>
+
+    <section>
+      <h2 style="text-align:center;color:var(--ink)">Our Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>LAN Installation</h3>
+          <p>Local Area Network setup for homes and small businesses.</p>
+        </div>
+        <div class="card">
+          <h3>Internet Setup</h3>
+          <p>Router and modem configuration for smooth online access.</p>
+        </div>
+        <div class="card">
+          <h3>Wi-Fi Security Audits</h3>
+          <p>Protect your data with tailored security checks.</p>
+        </div>
+        <div class="card">
+          <h3>Troubleshooting & Repairs</h3>
+          <p>Quick and reliable fixes for network problems.</p>
+        </div>
+        <div class="card">
+          <h3>Ongoing Maintenance</h3>
+          <p>Stay online with flexible support packages.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container">
+    <div>&copy; <span id="y"></span> ConnectEase — Networking Solutions</div>
+    <div>
+      <a href="index.html">Home</a> ·
+      <a href="networking.html">Understanding Networking</a> ·
+      <a href="services.html">Services</a> ·
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
